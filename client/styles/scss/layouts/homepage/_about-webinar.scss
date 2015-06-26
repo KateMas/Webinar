@@ -1,0 +1,26 @@
+.about-webinar {
+	padding-top: 128px;
+	background-image: url(../../../client/images/about-webinar/about-webinar-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    p {
+    	font-family: 'Clearsans Light';
+    	font-size: 20px;
+    	line-height: 24px;
+    	text-align: center;
+    	color: #ffffff;
+    }
+    h2 {
+    	margin-top: 24px;
+    	font-family: 'Clearsans Bold';
+    	font-size: 54px;
+    	line-height: 75px;
+    	text-align: center;
+    	text-transform: uppercase;
+		color: #f4bf1d;
+		span {
+			font-size: 64px;
+		}
+    }
+}
