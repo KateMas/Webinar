@@ -1,0 +1,30 @@
+input {
+	width: 212px;
+	height: 54px;
+	margin-right: 20px;
+	padding-left: 20px;
+	background-color: rgba(#000000,074);
+	border:1px solid rgba(#ffffff,0.3);
+	outline: none;
+	font-family: 'Clearsans Regular';
+		font-size: 16px;
+	@include box-shadow(-3px 0 0 0 #ffffff);
+	@include border-radius(3px);
+	@include transition-property(all);
+	@include transition-duration(600ms);
+	&:nth-child(2) {
+		margin-right: 22px;
+	}
+	@include placeholder {
+		color: #79716b;
+	}
+	&:focus {
+		background-color: #f7f3f3;
+		border:1px solid rgba(#000000,0.5);
+		color: #79716b;
+		@include box-shadow(-3px 0 0 0 rgba(#000000,0.2));
+		@include placeholder {
+			color: transparent;
+		}
+	}
+}

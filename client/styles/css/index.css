@@ -3336,6 +3336,10 @@ tbody.collapse.in {
   src: url('../fonts/../../../client/fonts/Clearsans-bold/ClearSans-Bold.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-bold/ClearSans-Bold.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-bold/ClearSans-Bold.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-bold/ClearSans-Bold.svg') format('svg');
 }
 @font-face {
+  font-family: "Clearsans Regular";
+  src: url('../fonts/../../../client/fonts/Clearsans-regular/ClearSans-Regular.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-regular/ClearSans-Regular.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-regular/ClearSans-Regular.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-regular/ClearSans-Regular.svg') format('svg');
+}
+@font-face {
   font-family: "Clearsans Thin";
   src: url('../fonts/../../../client/fonts/Clearsans-thin/ClearSans-Thin.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-thin/ClearSans-Thin.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-thin/ClearSans-Thin.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-thin/ClearSans-Thin.svg') format('svg');
 }
@@ -3343,14 +3347,89 @@ tbody.collapse.in {
   font-family: "Clearsans Light";
   src: url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.svg') format('svg');
 }
+input {
+  width: 212px;
+  height: 54px;
+  margin-right: 20px;
+  padding-left: 20px;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  font-family: 'Clearsans Regular';
+  font-size: 16px;
+  -webkit-box-shadow: -3px 0 0 0 #ffffff;
+  box-shadow: -3px 0 0 0 #ffffff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+}
+input:nth-child(2) {
+  margin-right: 22px;
+}
+input::-webkit-input-placeholder {
+  color: #79716b;
+}
+input::-moz-placeholder {
+  color: #79716b;
+}
+input:-moz-placeholder {
+  color: #79716b;
+}
+input:-ms-input-placeholder {
+  color: #79716b;
+}
+input:focus {
+  background-color: #f7f3f3;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #79716b;
+  -webkit-box-shadow: -3px 0 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -3px 0 0 0 rgba(0, 0, 0, 0.2);
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
 header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 header .nav-style {
   height: 59px;
   margin-top: 34px;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #181818;
+}
+footer a {
+  float: left;
+}
+
+form {
+  width: 899px;
+  margin: auto;
 }
 
 body.homepage .about-webinar {

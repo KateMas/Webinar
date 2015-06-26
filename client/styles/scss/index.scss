@@ -6,6 +6,8 @@
 @import "fonts/ClearSans";
 
 //mixins
+@import "mixins/placeholder";
+@import "mixins/user-select";
 
 //base
 
@@ -17,6 +19,7 @@
 //widgets
 @import "widgets/header";
 @import "widgets/footer";
+@import "widgets/form";
 
 //layouts
 @import "layouts/body";
