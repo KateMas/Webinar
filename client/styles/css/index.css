@@ -3347,11 +3347,25 @@ tbody.collapse.in {
   font-family: "Clearsans Light";
   src: url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.svg') format('svg');
 }
+button {
+  display: inline-block;
+  width: 185px;
+  background-color: #fb5240;
+  border: none;
+  font-family: 'Clearsans Regular';
+  font-size: 16px;
+  line-height: 52px;
+  text-transform: uppercase;
+  vertical-align: top;
+  color: #ffffff;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
 input {
   width: 212px;
   height: 54px;
-  margin-right: 20px;
-  padding-left: 20px;
   background-color: black;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
@@ -3366,9 +3380,6 @@ input {
   transition-property: all;
   -webkit-transition-duration: 600ms;
   transition-duration: 600ms;
-}
-input:nth-child(2) {
-  margin-right: 22px;
 }
 input::-webkit-input-placeholder {
   color: #79716b;
@@ -3422,14 +3433,27 @@ footer {
   width: 100%;
   padding: 20px 0;
   background-color: #181818;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 footer a {
   float: left;
 }
 
 form {
-  width: 899px;
+  width: 895px;
   margin: auto;
+}
+form input {
+  margin-right: 20px;
+  padding-left: 20px;
+}
+form input:nth-child(2) {
+  margin-right: 22px;
 }
 
 body.homepage .about-webinar {
@@ -3438,6 +3462,7 @@ body.homepage .about-webinar {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-align: center;
 }
 body.homepage .about-webinar p {
   font-family: 'Clearsans Light';
@@ -3446,15 +3471,63 @@ body.homepage .about-webinar p {
   text-align: center;
   color: #ffffff;
 }
-body.homepage .about-webinar h2 {
+body.homepage .about-webinar h1 {
   margin-top: 24px;
   font-family: 'Clearsans Bold';
   font-size: 54px;
   line-height: 75px;
-  text-align: center;
   text-transform: uppercase;
   color: #f4bf1d;
 }
-body.homepage .about-webinar h2 span {
+body.homepage .about-webinar h1 span {
   font-size: 64px;
+}
+body.homepage .about-webinar ul {
+  width: 418px;
+  margin: 31px auto;
+  padding: 0;
+  font-size: 0;
+}
+body.homepage .about-webinar ul li {
+  display: inline-block;
+  width: 170px;
+  height: 119px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  font-family: 'Clearsans Regular';
+  font-size: 18px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+}
+body.homepage .about-webinar ul li:first-child {
+  margin-right: 78px;
+}
+body.homepage .about-webinar ul li time {
+  display: block;
+  font-size: 48px;
+  color: #f4bf1d;
+}
+body.homepage .registration {
+  padding-top: 28px;
+  padding-bottom: 101px;
+  background-image: url(../../../client/images/registration/registration-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body.homepage .registration p {
+  font-family: 'Clearsans Thin';
+  font-size: 24px;
+  line-height: 31px;
+  color: #ffffff;
+}
+body.homepage .registration h2 {
+  margin-top: 4px;
+  margin-bottom: 56px;
+  font-family: 'Clearsans Thin';
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #dfb124;
 }

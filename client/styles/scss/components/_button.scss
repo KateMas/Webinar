@@ -1,0 +1,13 @@
+button {
+	display: inline-block;
+	width: 185px;
+	background-color: #fb5240;
+	border:none;
+	font-family: 'Clearsans Regular';
+	font-size: 16px;
+	line-height: 52px;
+	text-transform: uppercase;
+	vertical-align: top;
+	color: #ffffff;
+	@include border-radius(2px);
+}

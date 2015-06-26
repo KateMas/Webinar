@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
     p {
     	font-family: 'Clearsans Light';
     	font-size: 20px;
@@ -11,16 +12,41 @@
     	text-align: center;
     	color: #ffffff;
     }
-    h2 {
+    h1 {
     	margin-top: 24px;
     	font-family: 'Clearsans Bold';
     	font-size: 54px;
     	line-height: 75px;
-    	text-align: center;
     	text-transform: uppercase;
 		color: #f4bf1d;
 		span {
 			font-size: 64px;
 		}
+    }
+    ul {
+        width: 418px;
+        margin: 31px auto;
+        padding: 0;
+        font-size: 0;
+        li {
+            display: inline-block;
+            width: 170px;
+            height: 119px;
+            background-color: rgba(#000000,0.2);
+            border:1px solid #ffffff;
+            font-family: 'Clearsans Regular';
+            font-size: 18px;
+            line-height: 39px;
+            text-align: center;
+            color: #ffffff;
+            &:first-child {
+                margin-right: 78px;
+            }
+            time {
+                display: block;
+                font-size: 48px;
+                color: #f4bf1d;
+            }
+        }
     }
 }

@@ -1,4 +1,11 @@
 form {
-	width: 899px;
+	width: 895px;
 	margin:auto;
+	input {
+		margin-right: 20px;
+		padding-left: 20px;
+		&:nth-child(2) {
+			margin-right: 22px;
+		}
+	}
 }
