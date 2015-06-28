@@ -114,15 +114,11 @@
                 }
                 span {
                     position: relative;
-                    top: 0;
-                    left: 0;
                     display: inline-block;
                     width: 91px;
                     height: 1px;
                     background-color: #f0bb1d;
                     @include breakpoint(medium) {
-                        top: 44px;
-                        right: -28px;
                         width: 70px;
                     }
                     &:before, &:after {
@@ -162,10 +158,11 @@
                         top: 75px;
                         right: -35px;
                         float: right;
+                        @include breakpoint(medium) {
+                            top: 44px;
+                            right: -28px;
+                        }
                     }
-                }
-                img {
-                    @include user-select(none);
                 }
                 &.text-study {
                     float: right;
@@ -175,23 +172,50 @@
                         float: right;
                         width: 308px;
                         margin-top: 14px;
+                        @include breakpoint(medium) {
+                            width: 284px;
+                            margin-top: -4px;
+                        }
                     }
                     span {
                         top: -75px;
                         right: 38px;
                         float: left;
+                        @include breakpoint(medium) {
+                            top: 44px;
+                            right: -34px;
+                        }
                     }
                 }
                 &.text-create {
                     p {
                         width: 100%;
                         margin-top: 135px;
+                        @include breakpoint(medium) {
+                            margin-top: 93px;
+                        }
                     }
                     span {
                         top: -134px;
                         right: -1px;
                         @include transform (rotate(90deg));
+                        @include breakpoint(medium) {
+                            top: -109px;
+                            right: 0;
+                        }
                     }
+                }
+            }
+            img {
+                position: relative;
+                width: 226px;
+                @include user-select(none);
+                @include breakpoint(medium) {
+                    //position: relative;
+                    top: -14px;
+                    left: 33px;
+                    display: inline-block;
+                    width: 178px;
                 }
             }
         }
@@ -200,10 +224,17 @@
             margin-bottom: 24px;
             h3 {
                 color: #f0bb1d;
+                @include breakpoint(medium) {
+                    margin-top: 79px;
+                    font-size: 30px;
+                }
             }
             .info-addition {
                 width: 1019px;
                 margin: 101px auto 0;
+                @include breakpoint(medium) {
+                    width: 900px;
+                }
                 figure {
                     position: relative;
                     display: inline-block;
@@ -217,17 +248,32 @@
                             height: 1px;
                             background-color: #f0bb1d;
                             content: "";
+                            @include breakpoint(medium) {
+                                top: 12px;
+                                right: -102px;
+                                width: 131px;
+                            }
                        }
                     &:first-child {
                         width: 259px;
                         margin-right: 128px;
+                        @include breakpoint(medium) {
+                            width: 248px;
+                            margin-right: 110px;
+                        }
                     }
                     &:nth-child(2) {
                         width: 250px;
                         margin-right: 128px;
+                        @include breakpoint(medium) {
+                            margin-right: 62px;
+                        }
                     }
                     &:last-child {
                         width: 254px;
+                        @include breakpoint(medium) {
+                            width: 224px;
+                        }
                         &:before {
                             display: none;
                         }
@@ -246,12 +292,19 @@
                             content: "";
                             @include border-radius (5px);
                             @include transform (rotate(45deg));
+                            @include breakpoint(medium) {
+                                top: -40px;
+                                right: -50px;
+                                width: 104px;
+                                height: 104px;
+                            }
                        }
                        &:after {
                         position: absolute;
                         top: -1px;
                         left: -34px;
                         display: inline-block;
+                        background-size: cover;
                         content: "";
                        }
                        &.image-hand {
@@ -259,6 +312,11 @@
                                 width: 63px;
                                 height: 63px;
                                 @extend.info-hand;
+                                @include breakpoint(medium) {
+                                    top: -8px;
+                                    left: -30px;
+                                    height: 46px;
+                                }
                             }
                         }
                         &.image-bag {
@@ -278,6 +336,9 @@
                     }
                     p {
                         margin-top: 132px;
+                        @include breakpoint(medium) {
+                            margin-top: 99px;
+                        }
                     }
                 }
             }
