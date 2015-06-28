@@ -2,16 +2,29 @@
 	padding-top: 82px;
 	padding-bottom: 73px;
 	@include clearfix;
+	@include breakpoint(medium) {
+		padding-top: 52px;
+		padding-bottom: 49px;
+	}
 	.gift-access-container {
 		width: 928px;
 		margin: auto;
+		@include clearfix;
+		@include breakpoint(medium) {
+			width: 813px;
+		}
 		h4 {
 			position: relative;
 			float: left;
-			margin-top: 50px;
+			margin-top: 49px;
 			font-family: "Clearsans Thin";
 			font-size: 36px;
 			text-transform: uppercase;
+			@include breakpoint(medium) {
+				margin-top: 47px;
+				font-family: "Clearsans Light";
+				font-size: 29px;
+			}
 			&::after {
 				position: absolute;
 				top: 63px;
@@ -21,19 +34,32 @@
 				height: 1px;
 				background-color: #f4bf1d;
 				content: "";
+				@include breakpoint(medium) {
+					top: 52px;
+					width: 380px;
+				}
 			}
 		}
 		img {
 			float: right;
 			@include user-select(none);
+			@include breakpoint(medium) {
+				width: 331px;
+			}
 		}
 		p {
 			float: left;
 			width: 502px;
-			margin-top: 0;
+			margin-top: -2px;
 			font-family: "Clearsans Light";
 			font-size: 20px;
 			line-height: 23px;
+			@include breakpoint(medium) {
+				width: 482px;
+				margin-top: 3px;
+				font-size: 17px;
+				line-height: 21px;
+			}
 		}
 	}
 }

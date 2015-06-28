@@ -9,18 +9,23 @@
 		@content;
 		}
 	}
+	@else if $point == extra-medium {
+		@media (min-width: 800px) and (max-width: 1152px) {
+		@content;
+		}
+	}
 	@else if $point == small {
-		@media (min-width: 768px) and (max-width: 1152px) {
+		@media (min-width: 521px) and (max-width: 799px) {
 		@content;
 		}
 	}
 	@else if $point == extra-small {
-		@media (min-width: 541px) and (max-width: 767px) {
+		@media (min-width: 480px) and (max-width: 520px) {
 		@content;
 		}
 	}
 	@else if $point == extra-xs-small {
-		@media (max-width: 540px) {
+		@media (max-width: 479px) {
 		@content;
 		}
 	}

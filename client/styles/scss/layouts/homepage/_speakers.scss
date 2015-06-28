@@ -5,15 +5,27 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    @include breakpoint(medium) {
+        padding-bottom: 40px;
+    }
     h2 {
+        margin-top: 28px;
     	font-family: 'Clearsans Thin';
         font-size: 36px;
         text-transform: uppercase;
         text-align: center;
+        @include breakpoint(medium) {
+            margin-top: 31px;
+        }
     }
     .description {
     	width: 1140px;
     	margin: auto;
     	padding-top: 30px;
+        @include clearfix;
+        @include breakpoint(medium) {
+            width: 970px;
+            padding-top: 7px;
+        }
     }
 }

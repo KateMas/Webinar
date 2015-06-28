@@ -1,8 +1,11 @@
 footer {
 	width: 100%;
-	padding: 22px 0;
+	padding: 25px 0;
 	background-color: #181818;
 	@include user-select(none);
+	@include breakpoint(medium) {
+		padding: 22px 0;
+	}
 	a {
 		float: left;
 	}
