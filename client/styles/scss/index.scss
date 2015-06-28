@@ -1,6 +1,11 @@
 @import "compass/css3";
 @import "compass/utilities/general/clearfix";
 @import "lib/bootstrap/bootstrap";
+@import "compass/utilities/sprites";
+
+//sprites
+@import "info/*.png";
+@include all-info-sprites;
 
 //fonts
 @import "fonts/ClearSans";
@@ -20,6 +25,7 @@
 @import "widgets/header";
 @import "widgets/footer";
 @import "widgets/form";
+@import "widgets/speakers";
 
 //layouts
 @import "layouts/body";

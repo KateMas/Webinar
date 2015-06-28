@@ -3,8 +3,11 @@ header {
 	z-index: 1;
 	width: 100%;
 	@include user-select(none);
-	.nav-style {
-		height: 59px;
-		margin-top: 34px;
+	.size-container {
+		padding-left: 0;
+		.nav-style {
+			height: 59px;
+			margin-top: 34px;
+		}
 	}
 }

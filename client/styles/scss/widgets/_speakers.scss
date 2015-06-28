@@ -1,0 +1,65 @@
+.description-speakers {
+	@include clearfix;
+	&:first-child {
+		float: left;
+		width: 526px;
+		padding-left: 24px;
+	}
+	&:last-child {
+		float: right;
+		width: 548px;
+	}
+	figure {
+		height: 100%;
+		@include clearfix;
+		img {
+			float: left;
+		}
+		figcaption {
+			float: left;
+			padding-left: 25px;
+			hr {
+				width: 317px;
+				height: 1px;
+				margin: 0;
+				background-color: #ffffff;
+			}
+			p {
+				margin-top: 8px;
+				margin-bottom: 17px;
+				font-family: 'Clearsans Thin';
+				font-size: 47px;
+				line-height: 58px;
+				text-align: left;
+				color: #ffffff;
+				b {
+					font-weight:bold;
+				}
+			}
+		}
+	}
+	ul {
+		margin-top: 23px;
+		padding-left: 26px;
+		li {
+			position: relative;
+			margin-bottom: 18px;
+			font-family: 'Clearsans Light';
+			font-size: 18px;
+			line-height: 24px;
+			list-style-type: none;
+			&:before {
+				position: absolute;
+				top: 8px;
+				left: -23px;
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				background-color: #eebd11;
+				border:1px solid #ffffff;
+				content: "";
+				@include transform (rotate(45deg));
+			}
+		}
+	}
+}

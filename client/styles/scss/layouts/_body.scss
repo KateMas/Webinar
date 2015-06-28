@@ -2,5 +2,6 @@ body {
 	&.homepage {
 		@import "layouts/homepage/about-webinar";
 		@import "layouts/homepage/registration";
+		@import "layouts/homepage/speakers";
 	}
 }

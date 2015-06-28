@@ -1,0 +1,19 @@
+.speakers {
+	padding-top: 18px;
+	padding-bottom: 59px;
+	background-image: url(../../../client/images/speakers/speakers-background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2 {
+    	font-family: 'Clearsans Thin';
+        font-size: 36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .description {
+    	width: 1140px;
+    	margin: auto;
+    	padding-top: 30px;
+    }
+}
