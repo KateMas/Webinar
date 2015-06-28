@@ -9,6 +9,9 @@
     @include breakpoint(medium) {
         padding-bottom: 89px;
     }
+    @include breakpoint(extra-medium) {
+        padding-bottom: 63px;
+    }
     .size-container {
         p {
             font-family: 'Clearsans Light';
@@ -20,6 +23,11 @@
                 margin-top: 16px;
                 font-size: 17px;
                 line-height: 20px;
+            }
+            @include breakpoint(extra-medium) {
+                margin-top: 18px;
+                font-size: 17px;
+                line-height: 21px;
             }
         }
         h1 {
@@ -34,10 +42,18 @@
                 font-size: 46px;
                 line-height: 64px;
             }
+            @include breakpoint(extra-medium) {
+                margin-top: 22px;
+                font-size: 38px;
+                line-height: 55px;
+            }
             span {
                 font-size: 64px;
                 @include breakpoint(medium) {
                     font-size: 55px;
+                }
+                @include breakpoint(extra-medium) {
+                    font-size: 45px;
                 }
             }
         }
@@ -48,6 +64,9 @@
             font-size: 0;
             @include breakpoint(medium) {
                 margin: 27px auto;
+            }
+            @include breakpoint(extra-medium) {
+                margin: 22px auto;
             }
             li {
                 display: inline-block;
@@ -66,8 +85,20 @@
                     font-size: 15px;
                     line-height: 33px;
                 }
+                @include breakpoint(extra-medium) {
+                    width: 120px;
+                    height: 84px;
+                    font-size: 13px;
+                    line-height: 27px;
+                }
                 &:first-child {
                     margin-right: 78px;
+                    @include breakpoint(medium) {
+                        margin-right: 66px;
+                    }
+                    @include breakpoint(extra-medium) {
+                        margin-right: 56px;
+                    }
                 }
                 time {
                     display: block;
@@ -77,13 +108,10 @@
                         font-size: 42px;
                         line-height: 32px;
                     }
+                    @include breakpoint(extra-medium) {
+                        font-size: 37px;
+                    }
                 }
-            }
-        }
-        form {
-            margin: 102px auto 0;
-            @include breakpoint(medium) {
-                margin: 87px auto 0;
             }
         }
         h3 {
@@ -102,6 +130,11 @@
                     margin-top: 96px;
                     font-size: 28px;
                 }
+                @include breakpoint(extra-medium) {
+                    margin-top: 80px;
+                    margin-bottom: 31px;
+                    font-size: 24px;
+                }
             }
             .info {
                 p {
@@ -114,6 +147,11 @@
                         font-size: 18px;
                         line-height: 23px;
                     }
+                    @include breakpoint(extra-medium) {
+                        margin-top: 33px;
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
                 }
                 span {
                     position: relative;
@@ -123,6 +161,9 @@
                     background-color: #f0bb1d;
                     @include breakpoint(medium) {
                         width: 70px;
+                    }
+                    @include breakpoint(extra-medium) {
+                        width: 58px;
                     }
                     &:before, &:after {
                         position: absolute;
@@ -137,12 +178,23 @@
                             width: 7px;
                             height: 7px;
                         }
+                        @include breakpoint(extra-medium) {
+                            top: -3px;
+                            width: 6px;
+                            height: 6px;
+                        }
                     }
                     &:before {
                         left: -8px;
+                        @include breakpoint(extra-medium) {
+                            left: -6px;
+                        }
                     }
                     &:after {
                         right: -8px;
+                        @include breakpoint(extra-medium) {
+                            right: -6px;
+                        }
                     }
                 }
                 &.text-give {
@@ -156,14 +208,22 @@
                             width: 255px;
                             padding-left: 69px;
                         }
+                        @include breakpoint(extra-medium) {
+                            width: 193px;
+                            padding-left: 29px;
+                        }
                     }
                     span {
                         top: 74px;
-                        right: 5px;
+                        right: 7px;
                         float: right;
                         @include breakpoint(medium) {
                             top: 44px;
                             right: -28px;
+                        }
+                        @include breakpoint(extra-medium) {
+                            top: 64px;
+                            right: -22px;
                         }
                     }
                 }
@@ -171,6 +231,9 @@
                     float: right;
                     width: 390px;
                     @include clearfix;
+                    @include breakpoint(extra-medium) {
+                        width: 210px;
+                    }
                     p {
                         float: right;
                         width: 308px;
@@ -179,14 +242,22 @@
                             width: 284px;
                             margin-top: -4px;
                         }
+                        @include breakpoint(extra-medium) {
+                            width: 210px;
+                            margin-top: 24px;
+                        }
                     }
                     span {
                         top: -76px;
-                        right: 31px;
+                        right: 33px;
                         float: left;
                         @include breakpoint(medium) {
                             top: 44px;
                             right: -34px;
+                        }
+                        @include breakpoint(extra-medium) {
+                            top: -50px;
+                            right: 67px;
                         }
                     }
                 }
@@ -197,21 +268,28 @@
                         @include breakpoint(medium) {
                             margin-top: 93px;
                         }
+                        @include breakpoint(extra-medium) {
+                            margin-top: 103px;
+                        }
                     }
                     span {
                         top: -136px;
-                        right: -6px;
+                        right: -3px;
                         @include transform (rotate(90deg));
                         @include breakpoint(medium) {
                             top: -109px;
                             right: 0;
+                        }
+                        @include breakpoint(extra-medium) {
+                            top: -92px;
+                            right: 1px;
                         }
                     }
                 }
             }
             img {
                 position: relative;
-                left: -17px;
+                left: -18px;
                 width: 226px;
                 @include user-select(none);
                 @include breakpoint(medium) {
@@ -219,6 +297,12 @@
                     left: 33px;
                     display: inline-block;
                     width: 178px;
+                }
+                @include breakpoint(extra-medium) {
+                    top: 14px;
+                    left: -22px;
+                    display: inline-block;
+                    width: 148px;
                 }
             }
         }
@@ -228,12 +312,19 @@
             @include breakpoint(medium) {
                 margin-bottom: 50px;
             }
+            @include breakpoint(extra-medium) {
+                margin-bottom: 39px;
+            }
             h3 {
                 margin-top: 34px;
                 color: #f0bb1d;
                 @include breakpoint(medium) {
                     margin-top: 80px;
                     font-size: 29px;
+                }
+                @include breakpoint(extra-medium) {
+                    margin-top: 36px;
+                    font-size: 24px;
                 }
             }
             .info-addition {
@@ -242,6 +333,10 @@
                 @include breakpoint(medium) {
                     width: 860px;
                     margin: 61px auto 0;
+                }
+                @include breakpoint(extra-medium) {
+                    width: 709px;
+                    margin: 48px auto 0;
                 }
                 figure {
                     position: relative;
@@ -257,8 +352,11 @@
                             content: "";
                             @include breakpoint(medium) {
                                 top: 52px;
-                                right: -99px;
                                 width: 131px;
+                            }
+                            @include breakpoint(extra-medium) {
+                                top: 43px;
+                                width: 109px;
                             }
                        }
                     &:first-child {
@@ -268,19 +366,32 @@
                             width: 248px;
                             margin-right: 64px;
                         }
+                        @include breakpoint(extra-medium) {
+                            width: 177px;
+                            margin-right: 89px;
+                        }
                         &:before {
                             right: -140px;
                             @include breakpoint(medium) {
                                 right: -97px;
                             }
+                            @include breakpoint(extra-medium) {
+                                right: -100px;
+                            }
                         }
                     }
                     &:nth-child(2) {
                         width: 250px;
+                        @include breakpoint(extra-medium) {
+                            width: 179px;
+                        }
                         &:before {
                             right: -143px;
                             @include breakpoint(medium) {
                                 right: -96px;
+                            }
+                            @include breakpoint(extra-medium) {
+                                right: -97px;
                             }
                         }
                     }
@@ -291,19 +402,27 @@
                             width: 224px;
                             margin-left: 74px;
                         }
+                        @include breakpoint(extra-medium) {
+                            width: 172px;
+                            margin-left: 91px;
+                        }
                         &:before {
                             display: none;
                         }
                     }
                     span {
-                       position: relative;
-                       display: inline-block;
-                       width: 123px;
-                       height: 123px;
-                       @include breakpoint(medium) {
-                        width: 104px;
-                        height: 104px;
-                       }
+                        position: relative;
+                        display: inline-block;
+                        width: 123px;
+                        height: 123px;
+                        @include breakpoint(medium) {
+                            width: 104px;
+                            height: 104px;
+                        }
+                        @include breakpoint(extra-medium) {
+                            width: 87px;
+                            height: 87px;
+                        }
                        &:before {
                             position: absolute;
                             top: 0;
@@ -318,6 +437,10 @@
                             @include breakpoint(medium) {
                                 width: 104px;
                                 height: 104px;
+                            }
+                            @include breakpoint(extra-medium) {
+                                width: 87px;
+                                height: 87px;
                             }
                        }
                        &:after {
@@ -372,6 +495,11 @@
                         margin-top: 41px;
                         @include breakpoint(medium) {
                             margin-top: 35px;
+                        }
+                        @include breakpoint(extra-medium) {
+                            margin-top: 28px;
+                            font-size: 13px;
+                            line-height: 17px;
                         }
                     }
                 }

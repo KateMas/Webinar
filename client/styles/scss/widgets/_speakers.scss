@@ -1,18 +1,32 @@
 .description-speakers {
+	display: inline-block;
+	vertical-align: top;
 	&:first-child {
-		float: left;
-		width: 526px;
-		padding-left: 24px;
+		width: 527px;
+		margin-right: 76px;
+		padding-left: 25px;
 		@include breakpoint(medium) {
-			width: 481px;
+			float: none;
+			width: 451px;
+			margin-right: 35px;
+			padding-left: 0;
+		}
+		@include breakpoint(extra-medium) {
+			float: none;
+			width: 354px;
+			margin-right: 32px;
 			padding-left: 0;
 		}
 	}
 	&:last-child {
-		float: right;
 		width: 548px;
 		@include breakpoint(medium) {
-			width: 481px;
+			float: none;
+			width: 453px;
+		}
+		@include breakpoint(extra-medium) {
+			float: none;
+			width: 358px;
 		}
 	}
 	figure {
@@ -22,19 +36,28 @@
 			float: left;
 			@include user-select(none);
 			@include breakpoint(medium) {
-				width: 139px;
+				width: 141px;
+			}
+			@include breakpoint(extra-medium) {
+				width: 125px;
 			}
 		}
 		figcaption {
 			float: left;
 			padding-left: 25px;
+			@include breakpoint(extra-medium) {
+				padding-left: 20px;
+			}
 			hr {
 				width: 317px;
 				height: 1px;
 				margin: 0;
 				background-color: #ffffff;
 				@include breakpoint(medium) {
-					width: 287px;
+					width: 285px;
+				}
+				@include breakpoint(extra-medium) {
+					width: 209px;
 				}
 			}
 			p {
@@ -51,6 +74,12 @@
 					font-size: 42px;
 					line-height: 52px;
 				}
+				@include breakpoint(extra-medium) {
+					margin-top: 7px;
+					margin-bottom: 15px;
+					font-size: 35px;
+					line-height: 44px;
+				}
 				b {
 					font-weight:bold;
 				}
@@ -61,7 +90,10 @@
 		margin-top: 23px;
 		padding-left: 26px;
 		@include breakpoint(medium) {
-			margin-top: 29px;
+			margin-top: 27px;
+		}
+		@include breakpoint(extra-medium) {
+			margin-top: 7px;
 		}
 		li {
 			position: relative;
@@ -70,6 +102,14 @@
 			font-size: 18px;
 			line-height: 24px;
 			list-style-type: none;
+			@include breakpoint(medium) {
+				margin-bottom: 20px;
+				line-height: 23px;
+			}
+			@include breakpoint(extra-medium) {
+				margin-bottom: 21px;
+				line-height: 22px;
+			}
 			&:before {
 				position: absolute;
 				top: 8px;

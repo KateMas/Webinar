@@ -15,7 +15,13 @@ button {
 	@include user-select(none);
 	@include breakpoint(medium) {
 		width: 157px;
+		font-size: 14px;
 		line-height: 44px;
+	}
+	@include breakpoint(extra-medium) {
+		width: 130px;
+		font-size: 11px;
+		line-height: 36px;
 	}
 	&:hover {
 		background-color: #d5493a;

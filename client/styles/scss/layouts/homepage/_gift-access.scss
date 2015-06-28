@@ -4,7 +4,11 @@
 	@include clearfix;
 	@include breakpoint(medium) {
 		padding-top: 52px;
-		padding-bottom: 49px;
+		padding-bottom: 54px;
+	}
+	@include breakpoint(extra-medium) {
+		padding-top: 50px;
+		padding-bottom: 51px;
 	}
 	.gift-access-container {
 		width: 928px;
@@ -13,16 +17,24 @@
 		@include breakpoint(medium) {
 			width: 813px;
 		}
+		@include breakpoint(extra-medium) {
+			width: 770px;
+		}
 		h4 {
 			position: relative;
 			float: left;
-			margin-top: 49px;
+			margin-top: 50px;
 			font-family: "Clearsans Thin";
 			font-size: 36px;
 			text-transform: uppercase;
 			@include breakpoint(medium) {
-				margin-top: 47px;
+				margin-top: 46px;
 				font-family: "Clearsans Light";
+				font-size: 29px;
+			}
+			@include breakpoint(extra-medium) {
+				margin-top: 50px;
+				font-family: "Clearsans Regular";
 				font-size: 29px;
 			}
 			&::after {
@@ -38,6 +50,10 @@
 					top: 52px;
 					width: 380px;
 				}
+				@include breakpoint(extra-medium) {
+					top: 52px;
+					width: 342px;
+				}
 			}
 		}
 		img {
@@ -46,11 +62,15 @@
 			@include breakpoint(medium) {
 				width: 331px;
 			}
+			@include breakpoint(extra-medium) {
+				width: 336px;
+				margin-right: 13px;
+			}
 		}
 		p {
 			float: left;
 			width: 502px;
-			margin-top: -2px;
+			margin-top: -1px;
 			font-family: "Clearsans Light";
 			font-size: 20px;
 			line-height: 23px;
@@ -58,6 +78,12 @@
 				width: 482px;
 				margin-top: 3px;
 				font-size: 17px;
+				line-height: 21px;
+			}
+			@include breakpoint(extra-medium) {
+				width: 400px;
+				margin-top: -8px;
+				font-size: 18px;
 				line-height: 21px;
 			}
 		}

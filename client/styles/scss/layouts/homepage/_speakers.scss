@@ -6,7 +6,10 @@
     background-position: center;
     background-repeat: no-repeat;
     @include breakpoint(medium) {
-        padding-bottom: 40px;
+        padding-bottom: 15px;
+    }
+    @include breakpoint(extra-medium) {
+        padding-bottom: 16px;
     }
     h2 {
         margin-top: 28px;
@@ -17,15 +20,22 @@
         @include breakpoint(medium) {
             margin-top: 31px;
         }
+        @include breakpoint(extra-medium) {
+            margin-top: 31px;
+        }
     }
     .description {
-    	width: 1140px;
+    	width: 1155px;
     	margin: auto;
     	padding-top: 30px;
-        @include clearfix;
         @include breakpoint(medium) {
-            width: 970px;
+            width: 943px;
             padding-top: 7px;
+        }
+        @include breakpoint(extra-medium) {
+            width: 770px;
+            padding-top: 3px;
+            font-size: 0;
         }
     }
 }

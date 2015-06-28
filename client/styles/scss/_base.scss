@@ -5,11 +5,17 @@ body {
 			@include breakpoint(medium) {
 				padding-left: 0;
 			}
+			@include breakpoint(extra-medium) {
+				padding-left: 0;
+			}
 		}
 	}
 	.container {
 		@include breakpoint(medium) {
 			width: 970px;
+		}
+		@include breakpoint(extra-medium) {
+			width: 770px;
 		}
 	}
 }
