@@ -8,11 +8,16 @@
     text-align: center;
     .size-container {
         p {
-        font-family: 'Clearsans Light';
-        font-size: 20px;
-        line-height: 24px;
-        text-align: center;
-        color: #ffffff;
+            font-family: 'Clearsans Light';
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #ffffff;
+            @include breakpoint(medium) {
+                margin-top: 16px;
+                font-size: 17px;
+                line-height: 20px;
+            }
         }
         h1 {
             margin-top: 24px;
@@ -21,8 +26,16 @@
             line-height: 75px;
             text-transform: uppercase;
             color: #f4bf1d;
+            @include breakpoint(medium) {
+                margin-top: 20px;
+                font-size: 46px;
+                line-height: 64px;
+            }
             span {
                 font-size: 64px;
+                @include breakpoint(medium) {
+                    font-size: 55px;
+                }
             }
         }
         ul {
@@ -30,6 +43,9 @@
             margin: 31px auto;
             padding: 0;
             font-size: 0;
+            @include breakpoint(medium) {
+                margin: 27px auto;
+            }
             li {
                 display: inline-block;
                 width: 170px;
@@ -41,6 +57,12 @@
                 line-height: 39px;
                 text-align: center;
                 color: #ffffff;
+                @include breakpoint(medium) {
+                    width: 145px;
+                    height: 102px;
+                    font-size: 15px;
+                    line-height: 33px;
+                }
                 &:first-child {
                     margin-right: 78px;
                 }
@@ -48,7 +70,17 @@
                     display: block;
                     font-size: 48px;
                     color: #f4bf1d;
+                    @include breakpoint(medium) {
+                        font-size: 42px;
+                        line-height: 32px;
+                    }
                 }
+            }
+        }
+        form {
+            margin: 102px auto 0;
+            @include breakpoint(medium) {
+                margin: 87px auto 0;
             }
         }
         h3 {
@@ -63,6 +95,10 @@
                 margin-top: 102px;
                 margin-bottom: 73px;
                 color: #ffffff;
+                @include breakpoint(medium) {
+                    margin-top: 96px;
+                    font-size: 28px;
+                }
             }
             .info {
                 p {
@@ -70,13 +106,25 @@
                     margin-top: 29px;
                     font-size: 24px;
                     line-height: 28px;
+                    @include breakpoint(medium) {
+                        margin-top: 7px;
+                        font-size: 18px;
+                        line-height: 23px;
+                    }
                 }
                 span {
                     position: relative;
+                    top: 0;
+                    left: 0;
                     display: inline-block;
                     width: 91px;
                     height: 1px;
                     background-color: #f0bb1d;
+                    @include breakpoint(medium) {
+                        top: 44px;
+                        right: -28px;
+                        width: 70px;
+                    }
                     &:before, &:after {
                         position: absolute;
                         top: -4px;
@@ -85,6 +133,11 @@
                         border:1px solid #f0bb1d;
                         content: "";
                         @include border-radius(50%);
+                        @include breakpoint(medium) {
+                            top: -3px;
+                            width: 7px;
+                            height: 7px;
+                        }
                     }
                     &:before {
                         left: -8px;
@@ -100,12 +153,19 @@
                         float: left;
                         width: 297px;
                         padding-left: 51px;
+                        @include breakpoint(medium) {
+                            width: 255px;
+                            padding-left: 69px;
+                        }
                     }
                     span {
                         top: 75px;
                         right: -35px;
                         float: right;
                     }
+                }
+                img {
+                    @include user-select(none);
                 }
                 &.text-study {
                     float: right;

@@ -10,6 +10,10 @@ input {
 	@include border-radius(3px);
 	@include transition-property(all);
 	@include transition-duration(600ms);
+	@include breakpoint(medium) {
+		width: 185px;
+		height: 46px;
+	}
 	@include placeholder {
 		color: #79716b;
 	}

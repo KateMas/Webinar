@@ -1,0 +1,12 @@
+body {
+	header,footer {
+		.size-container {
+			padding-left: 0;
+		}
+	}
+	.container {
+		@include breakpoint(medium) {
+			width: 970px;
+		}
+	}
+}

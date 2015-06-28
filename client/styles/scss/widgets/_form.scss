@@ -1,6 +1,9 @@
 form {
 	width: 895px;
-	margin: 102px auto 0;
+	@include user-select(none);
+	@include breakpoint(medium) {
+		width: 786px;
+	}
 	input {
 		margin-right: 20px;
 		padding-left: 20px;

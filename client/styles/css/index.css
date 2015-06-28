@@ -3364,6 +3364,19 @@ tbody.collapse.in {
   font-family: "Clearsans Light";
   src: url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-light/ClearSans-Light.svg') format('svg');
 }
+@font-face {
+  font-family: "Clearsans Medium";
+  src: url('../fonts/../../../client/fonts/Clearsans-medium/ClearSans-Medium.ttf') format('truetype'), url('../fonts/../../../client/fonts/Clearsans-medium/ClearSans-Medium.eot') format('embedded-opentype'), url('../fonts/../../../client/fonts/Clearsans-medium/ClearSans-Medium.woff') format('woff'), url('../fonts/../../../client/fonts/Clearsans-medium/ClearSans-Medium.svg') format('svg');
+}
+body header .size-container, body footer .size-container {
+  padding-left: 0;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body .container {
+    width: 970px;
+  }
+}
+
 button {
   display: inline-block;
   width: 185px;
@@ -3378,6 +3391,29 @@ button {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 400ms;
+  transition-duration: 400ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  button {
+    width: 157px;
+    line-height: 44px;
+  }
+}
+button:hover {
+  background-color: #d5493a;
+}
+button:active {
+  background-color: #da5e51;
+  outline: none;
 }
 
 input {
@@ -3397,6 +3433,12 @@ input {
   transition-property: all;
   -webkit-transition-duration: 600ms;
   transition-duration: 600ms;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  input {
+    width: 185px;
+    height: 46px;
+  }
 }
 input::-webkit-input-placeholder {
   color: #79716b;
@@ -3441,17 +3483,14 @@ header {
   user-select: none;
   cursor: default;
 }
-header .size-container {
-  padding-left: 0;
-}
-header .size-container .nav-style {
+header .nav-style {
   height: 59px;
   margin-top: 34px;
 }
 
 footer {
   width: 100%;
-  padding: 20px 0;
+  padding: 22px 0;
   background-color: #181818;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3466,7 +3505,17 @@ footer a {
 
 form {
   width: 895px;
-  margin: 102px auto 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  form {
+    width: 786px;
+  }
 }
 form input {
   margin-right: 20px;
@@ -3504,6 +3553,12 @@ form input:nth-child(2) {
 }
 .description-speakers figure img {
   float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 .description-speakers figure figcaption {
   float: left;
@@ -3571,6 +3626,13 @@ body.homepage .about-webinar .size-container p {
   text-align: center;
   color: #ffffff;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container p {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
 body.homepage .about-webinar .size-container h1 {
   margin-top: 24px;
   font-family: 'Clearsans Bold';
@@ -3579,14 +3641,31 @@ body.homepage .about-webinar .size-container h1 {
   text-transform: uppercase;
   color: #f4bf1d;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container h1 {
+    margin-top: 20px;
+    font-size: 46px;
+    line-height: 64px;
+  }
+}
 body.homepage .about-webinar .size-container h1 span {
   font-size: 64px;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container h1 span {
+    font-size: 55px;
+  }
 }
 body.homepage .about-webinar .size-container ul {
   width: 418px;
   margin: 31px auto;
   padding: 0;
   font-size: 0;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container ul {
+    margin: 27px auto;
+  }
 }
 body.homepage .about-webinar .size-container ul li {
   display: inline-block;
@@ -3600,6 +3679,14 @@ body.homepage .about-webinar .size-container ul li {
   text-align: center;
   color: #ffffff;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container ul li {
+    width: 145px;
+    height: 102px;
+    font-size: 15px;
+    line-height: 33px;
+  }
+}
 body.homepage .about-webinar .size-container ul li:first-child {
   margin-right: 78px;
 }
@@ -3607,6 +3694,20 @@ body.homepage .about-webinar .size-container ul li time {
   display: block;
   font-size: 48px;
   color: #f4bf1d;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container ul li time {
+    font-size: 42px;
+    line-height: 32px;
+  }
+}
+body.homepage .about-webinar .size-container form {
+  margin: 102px auto 0;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container form {
+    margin: 87px auto 0;
+  }
 }
 body.homepage .about-webinar .size-container h3 {
   font-family: 'Clearsans Thin';
@@ -3628,18 +3729,40 @@ body.homepage .about-webinar .size-container .webinar-give h3 {
   margin-bottom: 73px;
   color: #ffffff;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container .webinar-give h3 {
+    margin-top: 96px;
+    font-size: 28px;
+  }
+}
 body.homepage .about-webinar .size-container .webinar-give .info p {
   display: inline-block;
   margin-top: 29px;
   font-size: 24px;
   line-height: 28px;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container .webinar-give .info p {
+    margin-top: 7px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
 body.homepage .about-webinar .size-container .webinar-give .info span {
   position: relative;
+  top: 0;
+  left: 0;
   display: inline-block;
   width: 91px;
   height: 1px;
   background-color: #f0bb1d;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container .webinar-give .info span {
+    top: 44px;
+    right: -28px;
+    width: 70px;
+  }
 }
 body.homepage .about-webinar .size-container .webinar-give .info span:before, body.homepage .about-webinar .size-container .webinar-give .info span:after {
   position: absolute;
@@ -3651,6 +3774,13 @@ body.homepage .about-webinar .size-container .webinar-give .info span:before, bo
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container .webinar-give .info span:before, body.homepage .about-webinar .size-container .webinar-give .info span:after {
+    top: -3px;
+    width: 7px;
+    height: 7px;
+  }
 }
 body.homepage .about-webinar .size-container .webinar-give .info span:before {
   left: -8px;
@@ -3673,10 +3803,24 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-give p {
   width: 297px;
   padding-left: 51px;
 }
+@media (min-width: 1153px) and (max-width: 1280px) {
+  body.homepage .about-webinar .size-container .webinar-give .info.text-give p {
+    width: 255px;
+    padding-left: 69px;
+  }
+}
 body.homepage .about-webinar .size-container .webinar-give .info.text-give span {
   top: 75px;
   right: -35px;
   float: right;
+}
+body.homepage .about-webinar .size-container .webinar-give .info img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
 }
 body.homepage .about-webinar .size-container .webinar-give .info.text-study {
   float: right;
@@ -3810,12 +3954,16 @@ body.homepage .registration p {
 }
 body.homepage .registration h2 {
   margin-top: 4px;
-  margin-bottom: 56px;
+  margin-bottom: 52px;
   font-family: 'Clearsans Thin';
   font-size: 36px;
+  line-height: 59px;
   text-align: center;
   text-transform: uppercase;
   color: #dfb124;
+}
+body.homepage .registration form {
+  margin: 0 auto;
 }
 body.homepage .speakers {
   padding-top: 18px;
@@ -3835,4 +3983,54 @@ body.homepage .speakers .description {
   width: 1140px;
   margin: auto;
   padding-top: 30px;
+}
+body.homepage .gift-access {
+  padding-top: 82px;
+  padding-bottom: 73px;
+}
+body.homepage .gift-access:before, body.homepage .gift-access:after {
+  content: " ";
+  display: table;
+}
+body.homepage .gift-access:after {
+  clear: both;
+}
+body.homepage .gift-access .gift-access-container {
+  width: 928px;
+  margin: auto;
+}
+body.homepage .gift-access .gift-access-container h4 {
+  position: relative;
+  float: left;
+  margin-top: 50px;
+  font-family: "Clearsans Thin";
+  font-size: 36px;
+  text-transform: uppercase;
+}
+body.homepage .gift-access .gift-access-container h4::after {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  display: inline-block;
+  width: 436px;
+  height: 1px;
+  background-color: #f4bf1d;
+  content: "";
+}
+body.homepage .gift-access .gift-access-container img {
+  float: right;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+body.homepage .gift-access .gift-access-container p {
+  float: left;
+  width: 502px;
+  margin-top: 0;
+  font-family: "Clearsans Light";
+  font-size: 20px;
+  line-height: 23px;
 }

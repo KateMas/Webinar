@@ -1,0 +1,39 @@
+.gift-access {
+	padding-top: 82px;
+	padding-bottom: 73px;
+	@include clearfix;
+	.gift-access-container {
+		width: 928px;
+		margin: auto;
+		h4 {
+			position: relative;
+			float: left;
+			margin-top: 50px;
+			font-family: "Clearsans Thin";
+			font-size: 36px;
+			text-transform: uppercase;
+			&::after {
+				position: absolute;
+				top: 63px;
+				left: 0;
+				display: inline-block;
+				width: 436px;
+				height: 1px;
+				background-color: #f4bf1d;
+				content: "";
+			}
+		}
+		img {
+			float: right;
+			@include user-select(none);
+		}
+		p {
+			float: left;
+			width: 502px;
+			margin-top: 0;
+			font-family: "Clearsans Light";
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
+}

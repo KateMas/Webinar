@@ -13,8 +13,10 @@
 //mixins
 @import "mixins/placeholder";
 @import "mixins/user-select";
+@import "mixins/breakpoints";
 
 //base
+@import "base";
 
 //components
 @import "components/button";

@@ -10,4 +10,18 @@ button {
 	vertical-align: top;
 	color: #ffffff;
 	@include border-radius(2px);
+	@include transition-property(background-color);
+	@include transition-duration(400ms);
+	@include user-select(none);
+	@include breakpoint(medium) {
+		width: 157px;
+		line-height: 44px;
+	}
+	&:hover {
+		background-color: #d5493a;
+	}
+	&:active {
+		background-color: #da5e51;
+		outline: none;
+	}
 }
