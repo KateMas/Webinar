@@ -6,13 +6,16 @@
     background-position: center;
     background-repeat: no-repeat;
     @include breakpoint(medium) {
-        padding-bottom: 15px;
+        padding-bottom: 38px;
     }
     @include breakpoint(extra-medium) {
         padding-bottom: 16px;
     }
+    @include breakpoint(extra-small) {
+        padding-bottom: 42px;
+    }
     h2 {
-        margin-top: 28px;
+        margin-top: 31px;
     	font-family: 'Clearsans Thin';
         font-size: 36px;
         text-transform: uppercase;
@@ -23,19 +26,26 @@
         @include breakpoint(extra-medium) {
             margin-top: 31px;
         }
+        @include breakpoint(extra-small) {
+            margin-top: 18px;
+        }
     }
     .description {
     	width: 1155px;
     	margin: auto;
     	padding-top: 30px;
         @include breakpoint(medium) {
-            width: 943px;
+            width: 970px;
             padding-top: 7px;
         }
         @include breakpoint(extra-medium) {
             width: 770px;
             padding-top: 3px;
             font-size: 0;
+        }
+        @include breakpoint(extra-small) {
+            width: 100%;
+            padding-top: 44px;
         }
     }
 }

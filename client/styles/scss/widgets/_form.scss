@@ -10,6 +10,10 @@ form {
 		width: 632px;
 		margin: 72px auto 0;
 	}
+	@include breakpoint(extra-small) {
+		width: 100%;
+		margin: 75px auto 0;
+	}
 	input {
 		margin-right: 20px;
 		padding-left: 20px;

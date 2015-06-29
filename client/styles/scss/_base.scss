@@ -3,19 +3,25 @@ body {
 		.size-container {
 			padding-left: 6px;
 			@include breakpoint(medium) {
-				padding-left: 0;
+				padding-left: 15;
 			}
 			@include breakpoint(extra-medium) {
-				padding-left: 0;
+				padding-left: 15px;
+			}
+			@include breakpoint(extra-small) {
+				padding-left: 15px;
 			}
 		}
 	}
 	.container {
 		@include breakpoint(medium) {
-			width: 970px;
+			width: 1000px;
 		}
 		@include breakpoint(extra-medium) {
-			width: 770px;
+			width: 800px;
+		}
+		@include breakpoint(extra-small) {
+			width: 500px;
 		}
 	}
 }

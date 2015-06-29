@@ -29,6 +29,11 @@
                 font-size: 17px;
                 line-height: 21px;
             }
+            @include breakpoint(extra-small) {
+                margin-top: 30px;
+                font-size: 20px;
+                line-height: 26px;
+            }
         }
         h1 {
             margin-top: 24px;
@@ -47,6 +52,11 @@
                 font-size: 38px;
                 line-height: 55px;
             }
+            @include breakpoint(extra-small) {
+                margin-top: 45px;
+                font-size: 36px;
+                line-height: 50px;
+            }
             span {
                 font-size: 64px;
                 @include breakpoint(medium) {
@@ -54,6 +64,9 @@
                 }
                 @include breakpoint(extra-medium) {
                     font-size: 45px;
+                }
+                @include breakpoint(extra-small) {
+                    font-size: 43px;
                 }
             }
         }
@@ -66,7 +79,12 @@
                 margin: 27px auto;
             }
             @include breakpoint(extra-medium) {
+                width: 295px;
                 margin: 22px auto;
+            }
+            @include breakpoint(extra-small) {
+                width: 433px;
+                margin: 37px auto;
             }
             li {
                 display: inline-block;
@@ -91,13 +109,21 @@
                     font-size: 13px;
                     line-height: 27px;
                 }
+                @include breakpoint(extra-small) {
+                    width: 184px;
+                    height: 130px;
+                    line-height: 43px;
+                }
                 &:first-child {
                     margin-right: 78px;
                     @include breakpoint(medium) {
                         margin-right: 66px;
                     }
                     @include breakpoint(extra-medium) {
-                        margin-right: 56px;
+                        margin-right: 55px;
+                    }
+                    @include breakpoint(extra-small) {
+                        margin-right: 65px;
                     }
                 }
                 time {
@@ -111,6 +137,16 @@
                     @include breakpoint(extra-medium) {
                         font-size: 37px;
                     }
+                    @include breakpoint(extra-small) {
+                        font-size: 51px;
+                    }
+                }
+            }
+        }
+        form {
+            input {
+                @include breakpoint(extra-small) {
+                    display: none;
                 }
             }
         }
@@ -132,8 +168,12 @@
                 }
                 @include breakpoint(extra-medium) {
                     margin-top: 80px;
-                    margin-bottom: 31px;
-                    font-size: 24px;
+                    margin-bottom: 34px;
+                    font-size: 23px;
+                }
+                @include breakpoint(extra-small) {
+                    margin-top: 51px;
+                    font-size: 40px;
                 }
             }
             .info {
@@ -219,11 +259,11 @@
                         float: right;
                         @include breakpoint(medium) {
                             top: 44px;
-                            right: -28px;
+                            right: -35px;
                         }
                         @include breakpoint(extra-medium) {
-                            top: 64px;
-                            right: -22px;
+                            top: 63px;
+                            right: -38px;
                         }
                     }
                 }
@@ -253,11 +293,11 @@
                         float: left;
                         @include breakpoint(medium) {
                             top: 44px;
-                            right: -34px;
+                            right: -11px;
                         }
                         @include breakpoint(extra-medium) {
-                            top: -50px;
-                            right: 67px;
+                            top: -51px;
+                            right: 82px;
                         }
                     }
                 }
@@ -274,11 +314,11 @@
                     }
                     span {
                         top: -136px;
-                        right: -3px;
+                        right: -7px;
                         @include transform (rotate(90deg));
                         @include breakpoint(medium) {
                             top: -109px;
-                            right: 0;
+                            right: 9px;
                         }
                         @include breakpoint(extra-medium) {
                             top: -92px;
@@ -294,21 +334,27 @@
                 @include user-select(none);
                 @include breakpoint(medium) {
                     top: -14px;
-                    left: 33px;
+                    left: 24px;
                     display: inline-block;
                     width: 178px;
                 }
                 @include breakpoint(extra-medium) {
-                    top: 14px;
-                    left: -22px;
+                    top: -2px;
+                    left: -185px;
                     display: inline-block;
                     width: 148px;
+                }
+                @include breakpoint(extra-small) {
+                    top: -184px;
+                    left: -2px;
+                    display: inline-block;
+                    width: 330px;
                 }
             }
         }
         .webinar-give-addition {
             font-size: 0;
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             @include breakpoint(medium) {
                 margin-bottom: 50px;
             }
@@ -316,7 +362,7 @@
                 margin-bottom: 39px;
             }
             h3 {
-                margin-top: 34px;
+                margin-top: 35px;
                 color: #f0bb1d;
                 @include breakpoint(medium) {
                     margin-top: 80px;
@@ -448,6 +494,7 @@
                         top: 27px;
                         left: 30px;
                         display: inline-block;
+                        background-size: cover;
                         content: "";
                         @include breakpoint(medium) {
                             background-size: cover;
@@ -459,11 +506,18 @@
                                 left: 28px;
                                 width: 63px;
                                 height: 63px;
-                                @extend.info-hand;
+                                background-image: url(../../../client/images/info/hand.png);
                                 @include breakpoint(medium) {
                                     top: 27px;
-                                    left: 28px;
-                                    height: 46px;
+                                    left: 26px;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                @include breakpoint(extra-medium) {
+                                    top: 21px;
+                                    left: 24px;
+                                    width: 45px;
+                                    height: 45px;
                                 }
                             }
                         }
@@ -471,11 +525,18 @@
                             &:after {
                                 width: 60px;
                                 height: 72px;
-                                @extend.info-bag;
+                                background-image: url(../../../client/images/info/bag.png);
                                 @include breakpoint(medium) {
                                     top: 24px;
-                                    left: 26px;
-                                    height: 60px;
+                                    left: 28px;
+                                    width: 51px;
+                                    height: 61px;
+                                }
+                                @include breakpoint(extra-medium) {
+                                    top: 19px;
+                                    left: 22px;
+                                    width: 41px;
+                                    height: 49px;
                                 }
                             }
                         }
@@ -483,10 +544,18 @@
                             &:after {
                                 width: 72px;
                                 height: 71px;
-                                @extend.info-man;
+                                background-image: url(../../../client/images/info/man.png);
                                 @include breakpoint(medium) {
-                                    top: 20px;
-                                    left: 18px;
+                                    top: 22px;
+                                    left: 23px;
+                                    width: 63px;
+                                    height: 63px;
+                                }
+                                @include breakpoint(extra-medium) {
+                                    top: 19px;
+                                    left: 20px;
+                                    width: 49px;
+                                    height: 49px;
                                 }
                             }
                         }

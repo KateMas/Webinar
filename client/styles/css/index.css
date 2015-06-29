@@ -3331,20 +3331,20 @@ tbody.collapse.in {
     display: none !important;
   }
 }
-.info-sprite, .info-bag, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-bag:after, .info-hand, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-hand:after, .info-man, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-man:after {
+.info-sprite, .info-bag, .info-hand, .info-man {
   background-image: url('../../images/info-sf9faf55a74.png');
   background-repeat: no-repeat;
 }
 
-.info-bag, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-bag:after {
+.info-bag {
   background-position: 0 0;
 }
 
-.info-hand, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-hand:after {
+.info-hand {
   background-position: 0 -72px;
 }
 
-.info-man, body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-man:after {
+.info-man {
   background-position: 0 -135px;
 }
 
@@ -3373,22 +3373,32 @@ body header .size-container, body footer .size-container {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body header .size-container, body footer .size-container {
-    padding-left: 0;
+    padding-left: 15;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body header .size-container, body footer .size-container {
-    padding-left: 0;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body header .size-container, body footer .size-container {
+    padding-left: 15px;
   }
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body .container {
-    width: 970px;
+    width: 1000px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body .container {
-    width: 770px;
+    width: 800px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body .container {
+    width: 500px;
   }
 }
 
@@ -3424,11 +3434,17 @@ button {
     line-height: 44px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   button {
     width: 130px;
     font-size: 11px;
     line-height: 36px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  button {
+    width: 100%;
+    font-size: 19px;
   }
 }
 button:hover {
@@ -3463,7 +3479,7 @@ input {
     height: 46px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   input {
     width: 151px;
     height: 38px;
@@ -3517,12 +3533,12 @@ header .nav-style {
   height: 59px;
   margin-top: 34px;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   header .nav-style {
     height: 51px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   header .nav-style img {
     width: 300px;
   }
@@ -3530,7 +3546,7 @@ header .nav-style {
 
 footer {
   width: 100%;
-  padding: 21px 0;
+  padding: 19px 0;
   background-color: #181818;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3541,18 +3557,23 @@ footer {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   footer {
-    padding: 22px 0;
+    padding: 21px 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   footer {
     padding: 23px 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  footer {
+    padding: 22px 0;
   }
 }
 footer a {
   float: left;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   footer a img {
     width: 300px;
   }
@@ -3574,10 +3595,16 @@ form {
     margin: 87px auto 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   form {
     width: 632px;
     margin: 72px auto 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  form {
+    width: 100%;
+    margin: 75px auto 0;
   }
 }
 form input {
@@ -3589,7 +3616,7 @@ form input {
     margin-right: 16px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   form input {
     margin-right: 11px;
   }
@@ -3602,7 +3629,7 @@ form input:nth-child(2) {
     margin-right: 15px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   form input:nth-child(2) {
     margin-right: 15px;
   }
@@ -3619,17 +3646,22 @@ form input:nth-child(2) {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   .description-speakers:first-child {
-    float: none;
-    width: 451px;
-    margin-right: 35px;
+    width: 448px;
+    margin-right: 59px;
     padding-left: 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers:first-child {
-    float: none;
     width: 354px;
-    margin-right: 32px;
+    margin-right: 51px;
+    padding-left: 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers:first-child {
+    width: 470px;
+    margin-right: 0;
     padding-left: 0;
   }
 }
@@ -3638,14 +3670,18 @@ form input:nth-child(2) {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   .description-speakers:last-child {
-    float: none;
-    width: 453px;
+    width: 458px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers:last-child {
-    float: none;
     width: 358px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers:last-child {
+    width: 470px;
+    padding-top: 42px;
   }
 }
 .description-speakers figure {
@@ -3672,7 +3708,7 @@ form input:nth-child(2) {
     width: 141px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers figure img {
     width: 125px;
   }
@@ -3681,9 +3717,14 @@ form input:nth-child(2) {
   float: left;
   padding-left: 25px;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers figure figcaption {
     padding-left: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers figure figcaption {
+    padding-left: 18px;
   }
 }
 .description-speakers figure figcaption hr {
@@ -3694,17 +3735,22 @@ form input:nth-child(2) {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   .description-speakers figure figcaption hr {
-    width: 285px;
+    width: 282px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers figure figcaption hr {
     width: 209px;
   }
 }
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers figure figcaption hr {
+    width: 283px;
+  }
+}
 .description-speakers figure figcaption p {
   margin-top: 8px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   font-family: 'Clearsans Thin';
   font-size: 47px;
   line-height: 58px;
@@ -3719,7 +3765,7 @@ form input:nth-child(2) {
     line-height: 52px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers figure figcaption p {
     margin-top: 7px;
     margin-bottom: 15px;
@@ -3739,9 +3785,15 @@ form input:nth-child(2) {
     margin-top: 27px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers ul {
     margin-top: 7px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers ul {
+    margin-top: 24px;
+    padding-left: 26px;
   }
 }
 .description-speakers ul li {
@@ -3758,10 +3810,17 @@ form input:nth-child(2) {
     line-height: 23px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   .description-speakers ul li {
     margin-bottom: 21px;
     line-height: 22px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  .description-speakers ul li {
+    margin-bottom: 30px;
+    font-size: 23px;
+    line-height: 24px;
   }
 }
 .description-speakers ul li:before {
@@ -3794,7 +3853,7 @@ body.homepage .about-webinar {
     padding-bottom: 89px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar {
     padding-bottom: 63px;
   }
@@ -3813,11 +3872,18 @@ body.homepage .about-webinar .size-container p {
     line-height: 20px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container p {
     margin-top: 18px;
     font-size: 17px;
     line-height: 21px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container p {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 body.homepage .about-webinar .size-container h1 {
@@ -3835,11 +3901,18 @@ body.homepage .about-webinar .size-container h1 {
     line-height: 64px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container h1 {
     margin-top: 22px;
     font-size: 38px;
     line-height: 55px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container h1 {
+    margin-top: 45px;
+    font-size: 36px;
+    line-height: 50px;
   }
 }
 body.homepage .about-webinar .size-container h1 span {
@@ -3850,9 +3923,14 @@ body.homepage .about-webinar .size-container h1 span {
     font-size: 55px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container h1 span {
     font-size: 45px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container h1 span {
+    font-size: 43px;
   }
 }
 body.homepage .about-webinar .size-container ul {
@@ -3866,9 +3944,16 @@ body.homepage .about-webinar .size-container ul {
     margin: 27px auto;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container ul {
+    width: 295px;
     margin: 22px auto;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container ul {
+    width: 433px;
+    margin: 37px auto;
   }
 }
 body.homepage .about-webinar .size-container ul li {
@@ -3891,12 +3976,19 @@ body.homepage .about-webinar .size-container ul li {
     line-height: 33px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container ul li {
     width: 120px;
     height: 84px;
     font-size: 13px;
     line-height: 27px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container ul li {
+    width: 184px;
+    height: 130px;
+    line-height: 43px;
   }
 }
 body.homepage .about-webinar .size-container ul li:first-child {
@@ -3907,9 +3999,14 @@ body.homepage .about-webinar .size-container ul li:first-child {
     margin-right: 66px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container ul li:first-child {
-    margin-right: 56px;
+    margin-right: 55px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container ul li:first-child {
+    margin-right: 65px;
   }
 }
 body.homepage .about-webinar .size-container ul li time {
@@ -3923,9 +4020,19 @@ body.homepage .about-webinar .size-container ul li time {
     line-height: 32px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container ul li time {
     font-size: 37px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container ul li time {
+    font-size: 51px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container form input {
+    display: none;
   }
 }
 body.homepage .about-webinar .size-container h3 {
@@ -3954,11 +4061,17 @@ body.homepage .about-webinar .size-container .webinar-give h3 {
     font-size: 28px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give h3 {
     margin-top: 80px;
-    margin-bottom: 31px;
-    font-size: 24px;
+    margin-bottom: 34px;
+    font-size: 23px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container .webinar-give h3 {
+    margin-top: 51px;
+    font-size: 40px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give .info p {
@@ -3974,7 +4087,7 @@ body.homepage .about-webinar .size-container .webinar-give .info p {
     line-height: 23px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info p {
     margin-top: 33px;
     font-size: 14px;
@@ -3993,7 +4106,7 @@ body.homepage .about-webinar .size-container .webinar-give .info span {
     width: 70px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info span {
     width: 58px;
   }
@@ -4016,7 +4129,7 @@ body.homepage .about-webinar .size-container .webinar-give .info span:before, bo
     height: 7px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info span:before, body.homepage .about-webinar .size-container .webinar-give .info span:after {
     top: -3px;
     width: 6px;
@@ -4026,7 +4139,7 @@ body.homepage .about-webinar .size-container .webinar-give .info span:before, bo
 body.homepage .about-webinar .size-container .webinar-give .info span:before {
   left: -8px;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info span:before {
     left: -6px;
   }
@@ -4034,7 +4147,7 @@ body.homepage .about-webinar .size-container .webinar-give .info span:before {
 body.homepage .about-webinar .size-container .webinar-give .info span:after {
   right: -8px;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info span:after {
     right: -6px;
   }
@@ -4060,7 +4173,7 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-give p {
     padding-left: 69px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-give p {
     width: 193px;
     padding-left: 29px;
@@ -4074,13 +4187,13 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-give span 
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-give span {
     top: 44px;
-    right: -28px;
+    right: -35px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-give span {
-    top: 64px;
-    right: -22px;
+    top: 63px;
+    right: -38px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give .info.text-study {
@@ -4094,7 +4207,7 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-study:befo
 body.homepage .about-webinar .size-container .webinar-give .info.text-study:after {
   clear: both;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-study {
     width: 210px;
   }
@@ -4110,7 +4223,7 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-study p {
     margin-top: -4px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-study p {
     width: 210px;
     margin-top: 24px;
@@ -4124,13 +4237,13 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-study span
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-study span {
     top: 44px;
-    right: -34px;
+    right: -11px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-study span {
-    top: -50px;
-    right: 67px;
+    top: -51px;
+    right: 82px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give .info.text-create p {
@@ -4142,14 +4255,14 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-create p {
     margin-top: 93px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-create p {
     margin-top: 103px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give .info.text-create span {
   top: -136px;
-  right: -3px;
+  right: -7px;
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -4158,10 +4271,10 @@ body.homepage .about-webinar .size-container .webinar-give .info.text-create spa
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-create span {
     top: -109px;
-    right: 0;
+    right: 9px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give .info.text-create span {
     top: -92px;
     right: 1px;
@@ -4181,35 +4294,43 @@ body.homepage .about-webinar .size-container .webinar-give img {
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give img {
     top: -14px;
-    left: 33px;
+    left: 24px;
     display: inline-block;
     width: 178px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give img {
-    top: 14px;
-    left: -22px;
+    top: -2px;
+    left: -185px;
     display: inline-block;
     width: 148px;
   }
 }
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .about-webinar .size-container .webinar-give img {
+    top: -184px;
+    left: -2px;
+    display: inline-block;
+    width: 330px;
+  }
+}
 body.homepage .about-webinar .size-container .webinar-give-addition {
   font-size: 0;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give-addition {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition {
     margin-bottom: 39px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give-addition h3 {
-  margin-top: 34px;
+  margin-top: 35px;
   color: #f0bb1d;
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
@@ -4218,7 +4339,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition h3 {
     font-size: 29px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition h3 {
     margin-top: 36px;
     font-size: 24px;
@@ -4234,7 +4355,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     margin: 61px auto 0;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition {
     width: 709px;
     margin: 48px auto 0;
@@ -4260,7 +4381,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     width: 131px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:before {
     top: 43px;
     width: 109px;
@@ -4276,7 +4397,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     margin-right: 64px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:first-child {
     width: 177px;
     margin-right: 89px;
@@ -4290,7 +4411,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     right: -97px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:first-child:before {
     right: -100px;
   }
@@ -4298,7 +4419,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
 body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:nth-child(2) {
   width: 250px;
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:nth-child(2) {
     width: 179px;
   }
@@ -4311,7 +4432,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     right: -96px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:nth-child(2):before {
     right: -97px;
   }
@@ -4326,7 +4447,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     margin-left: 74px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure:last-child {
     width: 172px;
     margin-left: 91px;
@@ -4347,7 +4468,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     height: 104px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span {
     width: 87px;
     height: 87px;
@@ -4376,7 +4497,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     height: 104px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span:before {
     width: 87px;
     height: 87px;
@@ -4387,6 +4508,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
   top: 27px;
   left: 30px;
   display: inline-block;
+  background-size: cover;
   content: "";
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
@@ -4399,33 +4521,64 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
   left: 28px;
   width: 63px;
   height: 63px;
+  background-image: url(../../../client/images/info/hand.png);
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-hand:after {
     top: 27px;
-    left: 28px;
-    height: 46px;
+    left: 26px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (min-width: 830px) and (max-width: 1152px) {
+  body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-hand:after {
+    top: 21px;
+    left: 24px;
+    width: 45px;
+    height: 45px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-bag:after {
   width: 60px;
   height: 72px;
+  background-image: url(../../../client/images/info/bag.png);
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-bag:after {
     top: 24px;
-    left: 26px;
-    height: 60px;
+    left: 28px;
+    width: 51px;
+    height: 61px;
+  }
+}
+@media (min-width: 830px) and (max-width: 1152px) {
+  body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-bag:after {
+    top: 19px;
+    left: 22px;
+    width: 41px;
+    height: 49px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-man:after {
   width: 72px;
   height: 71px;
+  background-image: url(../../../client/images/info/man.png);
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-man:after {
-    top: 20px;
-    left: 18px;
+    top: 22px;
+    left: 23px;
+    width: 63px;
+    height: 63px;
+  }
+}
+@media (min-width: 830px) and (max-width: 1152px) {
+  body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure span.image-man:after {
+    top: 19px;
+    left: 20px;
+    width: 49px;
+    height: 49px;
   }
 }
 body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure p {
@@ -4436,7 +4589,7 @@ body.homepage .about-webinar .size-container .webinar-give-addition .info-additi
     margin-top: 35px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .about-webinar .size-container .webinar-give-addition .info-addition figure p {
     margin-top: 28px;
     font-size: 13px;
@@ -4456,13 +4609,18 @@ body.homepage .registration {
     padding-bottom: 98px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .registration {
     padding-bottom: 76px;
   }
 }
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .registration {
+    padding-bottom: 110px;
+  }
+}
 body.homepage .registration p {
-  margin-top: 26px;
+  margin-top: 27px;
   font-family: 'Clearsans Thin';
   font-size: 24px;
   line-height: 30px;
@@ -4475,11 +4633,19 @@ body.homepage .registration p {
     line-height: 25px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .registration p {
-    margin-top: 31px;
+    margin-top: 28px;
     font-size: 17px;
     line-height: 21px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .registration p {
+    font-family: 'Clearsans Medium';
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
   }
 }
 body.homepage .registration h2 {
@@ -4494,19 +4660,35 @@ body.homepage .registration h2 {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .registration h2 {
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     font-size: 31px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .registration h2 {
-    margin-top: 35px;
+    margin-top: 18px;
     margin-bottom: 32px;
-    font-size: 31px;
+    font-size: 30px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .registration h2 {
+    margin-top: 13px;
+    margin-bottom: 56px;
+    font-size: 39px;
   }
 }
 body.homepage .registration form {
   margin: 0 auto;
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .registration form input {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+}
+body.homepage .registration form button {
+  margin-top: 4px;
 }
 body.homepage .speakers {
   padding-top: 18px;
@@ -4518,16 +4700,21 @@ body.homepage .speakers {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .speakers {
-    padding-bottom: 15px;
+    padding-bottom: 38px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .speakers {
     padding-bottom: 16px;
   }
 }
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .speakers {
+    padding-bottom: 42px;
+  }
+}
 body.homepage .speakers h2 {
-  margin-top: 28px;
+  margin-top: 31px;
   font-family: 'Clearsans Thin';
   font-size: 36px;
   text-transform: uppercase;
@@ -4538,9 +4725,14 @@ body.homepage .speakers h2 {
     margin-top: 31px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .speakers h2 {
     margin-top: 31px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .speakers h2 {
+    margin-top: 18px;
   }
 }
 body.homepage .speakers .description {
@@ -4550,15 +4742,21 @@ body.homepage .speakers .description {
 }
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .speakers .description {
-    width: 943px;
+    width: 970px;
     padding-top: 7px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .speakers .description {
     width: 770px;
     padding-top: 3px;
     font-size: 0;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .speakers .description {
+    width: 100%;
+    padding-top: 44px;
   }
 }
 body.homepage .gift-access {
@@ -4575,13 +4773,19 @@ body.homepage .gift-access:after {
 @media (min-width: 1153px) and (max-width: 1280px) {
   body.homepage .gift-access {
     padding-top: 52px;
-    padding-bottom: 54px;
+    padding-bottom: 49px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access {
     padding-top: 50px;
-    padding-bottom: 51px;
+    padding-bottom: 55px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access {
+    padding-top: 43px;
+    padding-bottom: 45px;
   }
 }
 body.homepage .gift-access .gift-access-container {
@@ -4600,9 +4804,14 @@ body.homepage .gift-access .gift-access-container:after {
     width: 813px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access .gift-access-container {
     width: 770px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access .gift-access-container {
+    width: 100%;
   }
 }
 body.homepage .gift-access .gift-access-container h4 {
@@ -4620,11 +4829,20 @@ body.homepage .gift-access .gift-access-container h4 {
     font-size: 29px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access .gift-access-container h4 {
     margin-top: 50px;
     font-family: "Clearsans Regular";
     font-size: 29px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access .gift-access-container h4 {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 35px;
+    text-align: center;
   }
 }
 body.homepage .gift-access .gift-access-container h4::after {
@@ -4643,10 +4861,15 @@ body.homepage .gift-access .gift-access-container h4::after {
     width: 380px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access .gift-access-container h4::after {
     top: 52px;
     width: 342px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access .gift-access-container h4::after {
+    display: none;
   }
 }
 body.homepage .gift-access .gift-access-container img {
@@ -4663,10 +4886,15 @@ body.homepage .gift-access .gift-access-container img {
     width: 331px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access .gift-access-container img {
-    width: 336px;
-    margin-right: 13px;
+    width: 334px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access .gift-access-container img {
+    float: none;
+    width: 468px;
   }
 }
 body.homepage .gift-access .gift-access-container p {
@@ -4685,11 +4913,21 @@ body.homepage .gift-access .gift-access-container p {
     line-height: 21px;
   }
 }
-@media (min-width: 800px) and (max-width: 1152px) {
+@media (min-width: 830px) and (max-width: 1152px) {
   body.homepage .gift-access .gift-access-container p {
     width: 400px;
-    margin-top: -8px;
-    font-size: 18px;
+    margin-top: -9px;
+    font-size: 17px;
     line-height: 21px;
+  }
+}
+@media (min-width: 500px) and (max-width: 520px) {
+  body.homepage .gift-access .gift-access-container p {
+    float: none;
+    width: 100%;
+    margin-top: 33px;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
   }
 }
